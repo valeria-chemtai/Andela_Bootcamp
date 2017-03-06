@@ -1,0 +1,9 @@
+def primenumbers(n):
+	for i in range(2,n):
+		numberprime=True
+		for j in range(2,i):
+			if(i%j==0):
+				numberprime=False
+				break
+		if numberprime:
+			print(i)
