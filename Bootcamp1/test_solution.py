@@ -3,9 +3,9 @@ from solution import solution
 
 class TestSolution(unittest.TestCase):
 	def test_addition(self):
-		self.assertTrue(solution(10,20,"+"),30)
+		self.assertEqual(solution(10,20,"+"),30)
 	def test_subtraction(self):
-		self.assertTrue(solution(10,5,"-"),5)
+		self.assertEqual(solution(10,5,"-"),5)
 	def test_subtraction(self):
 		self.assertNotEqual(solution(5,10,"-"),-5)
 	def test_multiplication(self):
