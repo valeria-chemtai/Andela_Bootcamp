@@ -1,7 +1,9 @@
-def find_max_min(n):
+def min_max(n):
+    result=[]
     smallest=None
     largest=None
     firstrun=True
+
     for i in n:
         if firstrun or i<smallest:
             smallest=i
@@ -11,9 +13,9 @@ def find_max_min(n):
             largest=i
 
     if smallest==largest:
-        a=[smallest]
-
+        result.append(smallest)
     else:
-        a=[smallest,largest]
+        result.append(smallest)
+        result.append(largest)
 
-    return a
+    return result
