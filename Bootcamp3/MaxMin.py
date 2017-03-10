@@ -13,7 +13,7 @@ def min_max(n):
             largest = i
 
     if (smallest == largest):
-        result.append(smallest)
+        result.append(len(n))
     else:
         result.append(smallest)
         result.append(largest)
